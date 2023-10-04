@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>converters</title>
+</head>
+<style>
+    body{
+        background-color: rgb(248, 248, 52);
+      background-position: center;
+       text-align: center;
+        font-size:40px;
+        font-family:'Courier New', Courier, monospace;
+       margin-top:150px;
+        }
+    
+        label{
+        display: block;
+        color:brown;
+        justify-content: center; 
+    }
+    input{
+      border-radius: 4%;
+       width: 200px;
+      height:5vh;
+      font-size: 30px;
+      color: red;
+      border:2px solid, rgb(198, 27, 55)
+     
+    }
+     ::placeholder{
+        color: rgb(152, 91, 11);
+        font-size: 20px;
+         }
+         button{
+            
+        padding: 10px 20px;
+        font-size: 16px;
+        background-color: #3498db;
+        color: white;
+        border:2px solid, rgb(198, 27, 55)
+        
+        
+    }
+    button:hover {
+        cursor: pointer;
+        color:red;
+        
+    }
+        
+
+</style>
+<body>
+    <label>first number</label>
+    <input type="text" id="firstnum" placeholder="enter here"><br>
+    <label>second number</label>
+    <input type="text" id="secondnum" placeholder="enter here">
+    <label>result</label>
+    <input type="text" id="result" placeholder="" readonly><br>
+    <button onclick="result.value=parseFloat(firstnum.value)+parseFloat(secondnum.value)">+</button>&nbsp;
+    <button onclick="result.value=firstnum.value-secondnum.value">-</button>&nbsp;
+    <button onclick="result.value=firstnum.value*secondnum.value">*</button>&nbsp;<br>
+    <button onclick=" result.value=firstnum.value/secondnum.value">/</button>&nbsp;
+    <button onclick="result.value=firstnum.value%secondnum.value">%</button>&nbsp;
+    <button onclick="result.value=firstnum.value**secondnum.value">^</button>&nbsp;
+    
+    
+    
+</body>
+
+</html>
+
+
